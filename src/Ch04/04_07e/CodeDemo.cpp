@@ -16,7 +16,8 @@ int main(){
 
     std::cout << "The first real part: " << points.begin()->real() << std::endl;
     std::cout << "Imaginary part at index 1: " << points[1].imag() << std::endl;
-    std::cout << "Next to last real: " << prev(points.end(), 2)->real() << std::endl;
+    std::cout << "2 before the last real: " << prev(points.end(), 2)->real() << std::endl;
+    std::cout << "next to first real: " << std::next(points.begin(), 2)->real() << std::endl;
     std::cout << "Last imaginary: " << (points.end() - 1)->imag() << std::endl;
     
     std::cout << std::endl << std::endl;
